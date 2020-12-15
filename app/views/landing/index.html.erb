@@ -1,0 +1,23 @@
+<h1>Real Time Chat</h1>
+
+
+
+
+
+<div id="msg" class="container border overflow-auto" style="height: 400px;">
+    <% @messages.each do |a| %>
+    <div class="message border rounded border-success p-1 m-1 text-wrap">
+        <%= a.content %>
+    </div>
+    <%end%>
+</div>
+<%= form_for @message, remote: true do |f| %>
+<form class=" input-group mb-3">
+    <div class=" form-control ">
+        <%= f.text_field :content, id:"chat", class:"form-control"%>
+    </div>
+    <span class=" input-group-text">
+        <%= f.submit class:"btn btn-success btn-sm rounded"%>
+    </span>
+</form>
+<%end%>
