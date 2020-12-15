@@ -1,4 +1,8 @@
 import consumer from "./consumer"
+//= require cable
+//= require_self
+//= require_tree .
+
 
 consumer.subscriptions.create("RoomChannel", {
   connected() {

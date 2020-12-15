@@ -11,7 +11,7 @@ require("jquery")
 //= require jquery
 //= require jquery.flexslider-min
 //= require jquery_ujs
-
+//= require_tree ./channels
 
 Rails.start()
 Turbolinks.start()
