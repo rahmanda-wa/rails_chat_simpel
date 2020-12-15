@@ -8,7 +8,9 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 require("jquery")
-
+//= require jquery
+//= require jquery.flexslider-min
+//= require jquery_ujs
 
 
 Rails.start()
