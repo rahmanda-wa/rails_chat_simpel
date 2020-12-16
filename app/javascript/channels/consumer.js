@@ -8,4 +8,4 @@ import { createConsumer } from "@rails/actioncable"
 
 export default createConsumer()
 
-createConsumer('http://chat-rails-simpel.herokuapp.com/cable')
+// createConsumer('http://chat-rails-simpel.herokuapp.com/cable')
